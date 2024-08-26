@@ -1,0 +1,11 @@
+#!/bin/bash
+file="file.txt"
+i=1;
+for i in {1..10} ; do
+	read line
+	if [ $i == 10 ];
+	then echo $line;
+		break
+	fi
+	#i=$((i+1))
+done < $file;
